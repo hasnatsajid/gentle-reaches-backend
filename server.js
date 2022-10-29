@@ -73,7 +73,7 @@ const corsOptionsProd = {
 app.use(cors(corsOptions));
 
 app.use((req, res, next) => {
-  const allowedOrigins = ["https://www.klayuniversewallet.com"];
+  const allowedOrigins = ["https://www.klayuniversewallet.com", "https://gentle-reaches.vercel.app"];
   // const allowedOrigins = ["*"];
   const origin = req.headers.origin;
   if (allowedOrigins.includes(origin)) {
