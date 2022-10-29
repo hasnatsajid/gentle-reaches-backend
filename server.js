@@ -70,7 +70,8 @@ const corsOptionsProd = {
   optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
 
-app.use(cors(corsOptions));
+//app.use(cors(corsOptions));
+app.use(cors());
 
 app.use((req, res, next) => {
   const allowedOrigins = ["https://www.klayuniversewallet.com", "https://gentle-reaches.vercel.app"];
